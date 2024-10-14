@@ -1,0 +1,114 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=League+Spartan:wght@100..900&family=Playwrite+CU:wght@100..400&family=Protest+Guerrilla&family=Rubik:ital,wght@0,300..900;1,300..900&family=Shrikhand&display=swap');
+
+
+:root {
+    --white: #ffffff;
+    --nyanza: #d8f3dcff;
+    --celadon: #b7e4c7ff;
+    --celadon-2: #95d5b2ff;
+    --mint: #74c69dff;
+    --mint-2: #52b788ff;
+    --sea-green: #40916cff;
+    --dartmouth-green: #2d6a4fff;
+    --brunswick-green: #1b4332ff;
+    --dark-green: #082119;
+    --black: #000000;
+}
+
+.carousel-container {
+    width: 100%;
+    height: 50vh; /* Keep container at 50% viewport height */
+    max-height: 50vh;
+    border-radius: 1.3em;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    overflow: hidden;
+}
+
+/* Ensure consistent height during transitions */
+.carousel-item {
+    height: 100%; /* Ensure carousel items take up full height */
+    width: 100%;  /* Force width to be 100% for all items */
+}
+
+/* Override Bootstrap carousel height calculation */
+.carousel-inner {
+    height: 100%; /* Ensure carousel-inner retains full height */
+    width: 100%;
+}
+
+/* Background carousel adjustments */
+.carousel-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    filter: blur(2px) brightness(0.9);
+    z-index: 0;
+}
+
+.carousel-background img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%; /* Ensure images cover entire container */
+}
+
+/* Logo area */
+.carousel-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    z-index: 1;
+    position: absolute;
+    height: 100%;
+    bottom: 15%;
+    left: 5%;
+    height: 100%;
+    padding: 0.4em;
+}
+
+.carousel-logo h3 {
+    font-weight: 300;
+    font-family: "Archivo Black";
+    border-radius: 0.3em;
+    opacity: 0.8;
+    color: rgb(255, 255, 255);
+}
+
+/* Foreground carousel */
+#carouselExampleIndicators {
+    width: 80%;
+    height: 100%;
+    filter: brightness(0.8);
+    transform: scale(1);
+    transition: transform 0.45s ease, filter 0.4s ease;
+}
+
+#carouselExampleIndicators:hover {
+    transform: scale(1.01);
+    filter: brightness(1);
+}
+
+.carousel-item img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+}
+
+/* Prevent height change during carousel transitions */
+.carousel.slide {
+    display: flex;
+    align-items: center;
+}
+
+.carousel-inner .carousel-item {
+    transition: transform 0.6s ease; /* Smooth transition */
+}

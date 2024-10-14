@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forest</title>
+    <!-- StyleSheets -->
+    <link rel="stylesheet" href="./src/style.css">
+
+    <!-- Googlefont -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=League+Spartan:wght@100..900&family=Playwrite+CU:wght@100..400&family=Protest+Guerrilla&family=Rubik:ital,wght@0,300..900;1,300..900&family=Shrikhand&display=swap" rel="stylesheet">
+
+    <!-- Boostrap5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- GSAP Library -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+  </head>
+  <body class="bg-dark text-white px-3 py-2 h-auto overflow-scroll">
+  <nav id="myNav" class="navbar navbar-expand-lg my-5">
+    <div class="container-fluid">
+      <a href="#" class="navbar-brand">FOREST</a>
+      <div class="navbar-item d-flex">
+        <li class="navbar-item">
+          <a href="#" class="nav-links px-2 py-1">Image</a>
+        </li>
+        <li class="navbar-item">
+          <a href="#" class="nav-links px-2 py-1">Weather</a>
+        </li>
+        <li class="navbar-item">
+          <a href="#" class="nav-links px-2 py-1">About</a>
+        </li>
+      </div>
+    </div>
+  </nav>
+
+  <article class="container-fluid w-100 d-flex carousel-container">
+    <!-- Background Carousel
+    <div id="backgroundCarousel" class="carousel slide carousel-background w-100" data-bs-ride="carousel" data-bs-interval="3000">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="src/assets/img/img-corousel-1.JPG" class="w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="src/assets/img/img-corousel-2.JPG" class="w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="src/assets/img/img-corousel-3.JPG" class="w-100" alt="...">
+            </div>
+        </div>
+    </div> -->
+
+    <!-- Logo and content carousel -->
+    <div class="carousel-logo my-5 px-2">
+        <h3>WELCOME TO THE FOREST</h3>
+        <h3>Mother Nature</h3>
+        <h3>Explore</h3>
+        <h3>Beauty</h3>
+    </div>
+
+    <!-- Foreground Carousel -->
+    <div id="carouselExampleIndicators" class="carousel slide w-100 my-1" data-bs-ride="carousel" data-bs-interval="3000">
+        <div class="carousel-indicators rounded-circle">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner rounded-lg">
+            <div class="carousel-item active rounded-lg">
+                <img src="src/assets/img/img-corousel-1.JPG" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="src/assets/img/img-corousel-2.JPG" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="src/assets/img/img-corousel-3.JPG" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</article>
+
+<!-- Scrollable Section -->
+<div id="scroll-container" class="container-fluid h-25 align-content-center justify-content-center display-flex flex-md-column my-3">
+  <div class="scroll-content">
+    <!-- Add some content for scrolling -->
+    <h1 class="text-center">Forest</h1>
+    <h2>Why Forests Are Important ?</h2>
+    <p>Forests play a vital role in maintaining the health of the planet. They provide oxygen, regulate temperatures, and serve as a home for countless species. Without forests, life as we know it wouldn't exist. They are critical for the ecosystem's balance.</p>
+    <h22>How Forests saves us ?</h22>
+    <p>Forests also act as carbon sinks, absorbing CO2 and helping to mitigate the effects of climate change. This makes them crucial in the global effort to combat rising temperatures and environmental degradation.</p>
+  </div>
+</div>
+
+
+<!-- Article Section with Unique ID to Scope the Styles -->
+<section id="forest-article" class="container-fluid w-100">
+  <div class="row article-content">
+    <h1 class="article-title my-5">Weather</h1>
+    <div class="col-md-6">
+      <h3 class="article-header text-decoration-underline">
+        Summer
+      </h3>
+      <p class="article-paragraph">
+        Forests play a vital role in maintaining the health of the planet. They provide oxygen, regulate temperatures, and serve as a home for countless species. Without forests, life as we know it wouldn't exist. They are critical for the ecosystem's balance.
+      </p>
+      <h3 class="article-header text-decoration-underline">
+        Winter
+      </h3>
+      <p class="article-paragraph">
+        Beyond their ecological importance, forests offer resources that humans rely on. From wood and medicinal plants to clean water and food, forests sustain livelihoods across the globe.
+      </p>
+    </div>
+    <div class="col-md-6">
+      <h3 class="article-header text-decoration-underline" id="Winter">
+        Spring
+      </h3>
+      <p class="article-paragraph">
+        Forests also act as carbon sinks, absorbing CO2 and helping to mitigate the effects of climate change. This makes them crucial in the global effort to combat rising temperatures and environmental degradation.
+      </p>
+      <h3 class="article-header text-decoration-underline">
+        Autumn
+      </h3>
+      <p class="article-paragraph">
+        In addition to their environmental benefits, forests are places of beauty and serenity. They provide a peaceful refuge where humans can reconnect with nature and find mental and physical well-being.
+      </p>
+    </div>
+  </div>
+</section>
+
+  <!-- Section with scrolling images -->
+  <section id="image-section" class="container h-50 my-4">
+    <div class="row image-grid">
+      <div class="col-md-6">
+        <img src="src/assets/img/summer.jpg" alt="Image 1" class="section-image img-fluid rounded-3 my-2" id="Winter">
+      </div>
+      <div class="col-md-6">
+        <img src="src/assets/img/spring.jpg" alt="Image 2" class="section-image img-fluid rounded-3 my-2">
+      </div>
+    </div>
+    <div class="row image-grid mt-4">
+      <div class="col-md-6">
+        <img src="src/assets/img/winter.jpg" alt="Image 3" class="section-image img-fluid rounded-3 my-2">
+      </div>
+      <div class="col-md-6">
+        <img src="src/assets/img/autumn.jpg" alt="Image 4" class="section-image img-fluid rounded-3 my-2">
+      </div>
+    </div>
+  </section>
+
+
+  
+  
+
+    <script type="module" src="src/main.js"></script>
+  
+    <!-- Bootstrap 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+    <!-- GSAP Library -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+  </body>
+</html>

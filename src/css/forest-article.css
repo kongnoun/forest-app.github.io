@@ -1,0 +1,42 @@
+:root {
+    --white: #ffffff;
+    --nyanza: #d8f3dcff;
+    --celadon: #b7e4c7ff;
+    --celadon-2: #95d5b2ff;
+    --mint: #74c69dff;
+    --mint-2: #52b788ff;
+    --sea-green: #40916cff;
+    --dartmouth-green: #2d6a4fff;
+    --brunswick-green: #1b4332ff;
+    --dark-green: #082119;
+    --black: #000000;
+}
+
+
+/* forest-article.css */
+
+/* Scope the styles to only apply within the #forest-article section */
+#forest-article {
+    perspective: 1000px; /* Enable 3D perspective */
+  }
+  
+  #forest-article .article-content {
+    background: transparent;
+    padding: 25px;
+    border-radius: 10px;
+  }
+  
+  #forest-article .article-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  #forest-article .article-paragraph {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
+    transform-style: preserve-3d;
+  }
+  

@@ -1,0 +1,36 @@
+:root {
+    --white: #ffffff;
+    --nyanza: #d8f3dcff;
+    --celadon: #b7e4c7ff;
+    --celadon-2: #95d5b2ff;
+    --mint: #74c69dff;
+    --mint-2: #52b788ff;
+    --sea-green: #40916cff;
+    --dartmouth-green: #2d6a4fff;
+    --brunswick-green: #1b4332ff;
+    --dark-green: #082119;
+    --black: #000000;
+}
+
+
+/* image-section.css */
+
+/* Scope the styles to only apply within the #image-section */
+#image-section {
+    perspective: 1000px; /* Enable 3D perspective for the entire section */
+  }
+  
+  #image-section .image-grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px; /* Add spacing between rows */
+  }
+  
+  #image-section .section-image {
+    width: 100%; /* Ensure images are responsive */
+    border-radius: 10px; /* Add rounded corners */
+    transition: transform 0.5s ease, opacity 0.5s ease; /* Smooth 3D and opacity transitions */
+    transform-style: preserve-3d; /* Enable 3D transform behavior */
+  }
+  
