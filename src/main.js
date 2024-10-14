@@ -17,7 +17,7 @@ gsap.utils.toArray('.article-paragraph').forEach((paragraph) => {
         start: 'top 90%',   // Start when paragraph is in the viewport
         end: 'top center',  // End when it reaches the center
         scrub: true,        // Smooth transition during scroll
-        markers: true,      // For debugging, can be removed later
+        // markers: true,      // For debugging, can be removed later
         // onUpdate: (self) => {
         //   const velocity = self.getVelocity();  // Log scroll velocity
         //   console.log('Scroll velocity (paragraph):', velocity);
@@ -42,7 +42,7 @@ gsap.utils.toArray('.article-header').forEach((header) => {
         start: 'top 90%',   // Start when header is in the viewport
         end: 'top center',  // End when it reaches the center
         scrub: 1,        // Smooth transition during scroll
-        markers: true,      // For debugging, can be removed later
+        // markers: true,      // For debugging, can be removed later
         // onUpdate: (self) => {
         //   const velocity = self.getVelocity();  // Log scroll velocity
         //   console.log('Scroll velocity (header):', velocity);
